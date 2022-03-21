@@ -37,6 +37,35 @@ public class FactoryDao {
 	생략...
 */
 ```
+
+```java
+public class MemberDao {
+	/* Factory 위임
+	private String driver = "com.mysql.cj.jdbc.Driver";
+	private String url = "jdbc:mysql";
+	private String user = "ssafy";
+	private String password = "ssafy";
+	*/
+	
+	private FactoryDao factory = FactoryDao.getInstance();
+	private static MemberDao instance = new MemberDao();
+	
+	/** 1. JDBC Driver 로딩 : Factory 위임 */
+	private MemberDao() {
+		/* Factory 위임
+		try {
+			Class.forName(driver);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		*/
+	}
+	
+	public static MemberDao getInstance() {
+		return instance;
+	}
+}
+```
 -------------
 ### 사용 방법 
 * 객체 생성부 미 분리
