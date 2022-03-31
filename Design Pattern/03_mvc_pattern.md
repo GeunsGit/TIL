@@ -1,11 +1,10 @@
 # MVC패턴(Model-View-Controller Pattern)
 
--------------
 ## MVC 패턴이란?
 
 * 디자인 패턴(Design Pattern) 중 하나
 * MVC란 Model View Controller의 약자로 어플리케이션의 역할을 세가지로 구분한 개발 방법론이다.
--------------
+
 ## Model, View, Controller
 
 - Model
