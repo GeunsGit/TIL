@@ -1,4 +1,3 @@
-# TIL
 ## 📖Today I Learned
 
 ### 분류
@@ -16,3 +15,4 @@
 #### **JAVA**
 * [Interface](https://github.com/jg6735/TIL/blob/main/Java/interface.md)
 * [Exception](https://github.com/jg6735/TIL/blob/main/Java/Exception.md)
+* [JSTL](https://github.com/jg6735/TIL/blob/main/Java/jstl.md)
