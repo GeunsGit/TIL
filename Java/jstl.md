@@ -1,6 +1,5 @@
 # JSTL
 
--------------
 ## JSTL이란 ?
 - 자바서버 페이지 표준 태그 라이브러리
 
@@ -11,7 +10,8 @@
 	
 - EL과 함께 사용한다.
 	* jsp 페이지에 지시어 태그 추가
-	<%@ taglib prefix="~~" uri="~~" %>
+	<%@ taglib prefix="~~"
+		uri="~~" %>
 	
 	* <prefix:tag-name attribute="value" />
 	* <prefix:tag-name attribute="value" >
