@@ -1,4 +1,4 @@
-## Vue.js ( 관련된 코드 보며 분석하기 )
+## Vue.js
 	- Vue.js 특징
 		1. MVVM(ModelView-View-Model) 디자인 패턴
 			- Model-View-ViewModel로 뷰가 특정 모델에 종속되지 않도록 모델을 분리한 패턴
@@ -57,7 +57,8 @@
 				router: {
 				},
 			});
-		
+			
+
 	- vue directive
 		- v-model
 			* 양방향 바인딩 : input, textarea 사용자 입력데이터와 vue data를 바인딩, 변경되면 자동으로 반영
