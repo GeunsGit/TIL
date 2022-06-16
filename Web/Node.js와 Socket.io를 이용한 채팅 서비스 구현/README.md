@@ -20,15 +20,15 @@ Socket은 전통적으로 클라이언트와 서버 간의 양방향 통신을 �
 npm install --save --save-exact socket.io express
 ```
 
-- ![socket(2)](https://user-images.githubusercontent.com/92859179/174125599-d8e6a786-fb17-471b-a3ae-dbf5380f7324.jpg)
+![socket(2)](https://user-images.githubusercontent.com/92859179/174125599-d8e6a786-fb17-471b-a3ae-dbf5380f7324.jpg)
 
 - 위와 같이 package.json에 express와 socket.io 의존성이 추가된 것을 확인할 수 있다.
 
-- ![socket(1)](https://user-images.githubusercontent.com/92859179/174125538-3207f961-917d-4a6a-bd5d-06be6175fa5b.jpg)
+![socket(1)](https://user-images.githubusercontent.com/92859179/174125538-3207f961-917d-4a6a-bd5d-06be6175fa5b.jpg)
 
 - sockiet.io의 인스턴스를 초기화하고, http 객체에 전달한다.
 
-- ![socket(3)](https://user-images.githubusercontent.com/92859179/174125664-65d0ef90-6401-40bb-81eb-8f5d78566f54.jpg)
+![socket(3)](https://user-images.githubusercontent.com/92859179/174125664-65d0ef90-6401-40bb-81eb-8f5d78566f54.jpg)
 
 - index.html
 - 그런 다음 socket.io-client를 불러오기 위한 코드를 추가한다.
@@ -39,7 +39,7 @@ npm install --save --save-exact socket.io express
 </script>
 ```
 
-- ![socket(4)](https://user-images.githubusercontent.com/92859179/174125673-aa652b05-43ce-4d47-9e37-d56eafa4ad6c.jpg)
+![socket(4)](https://user-images.githubusercontent.com/92859179/174125673-aa652b05-43ce-4d47-9e37-d56eafa4ad6c.jpg)
 
 - 위와 같이 emit을 통해 채팅 메시지 이벤트로 받게 한다.
 - Socket.IO는 모든 사람에게 이벤트를 보내기 위해 io.emit 기능을 제공한다.
@@ -57,18 +57,18 @@ io.on('connection', (socket) => {
 
 ## 최종 코드
 
-- ![socket(5)](https://user-images.githubusercontent.com/92859179/174125692-428776fc-698c-4bcf-83c7-67c2ff4d8f54.jpg)
+![socket(5)](https://user-images.githubusercontent.com/92859179/174125692-428776fc-698c-4bcf-83c7-67c2ff4d8f54.jpg)
 - index.js
-- ![socket(6)](https://user-images.githubusercontent.com/92859179/174125702-a1860091-420e-4a69-bae2-f9136dfac49f.jpg)
+![socket(6)](https://user-images.githubusercontent.com/92859179/174125702-a1860091-420e-4a69-bae2-f9136dfac49f.jpg)
 - index.html의 script
 
-- ![socket(7)](https://user-images.githubusercontent.com/92859179/174125718-cbe51f68-67ec-4ab7-86b8-49f075c78e0a.jpg)
+![socket(7)](https://user-images.githubusercontent.com/92859179/174125718-cbe51f68-67ec-4ab7-86b8-49f075c78e0a.jpg)
 - localhost:3000 접속
 
-- ![socket(8)](https://user-images.githubusercontent.com/92859179/174125765-6c286d09-cc93-4058-ba7a-d59c2c7ffcc3.jpg)
+![socket(8)](https://user-images.githubusercontent.com/92859179/174125765-6c286d09-cc93-4058-ba7a-d59c2c7ffcc3.jpg)
 - 현재 접속자와 접속자의 참여 표시
 
-- ![socket(9)](https://user-images.githubusercontent.com/92859179/174125774-a41c15fb-a9be-4185-a041-0f30796ff253.jpg)
+![socket(9)](https://user-images.githubusercontent.com/92859179/174125774-a41c15fb-a9be-4185-a041-0f30796ff253.jpg)
 - 브라우저 종료시 disconnect 되며, 채팅방에서 퇴장
 
 ## Node.js
