@@ -24,40 +24,47 @@
 ## Web Application
 - Model 2 Architecture
 	- MVC Pattern
-		- Model : Java Class(Java Bean)
+		- Model : Java Class (Java Bean)
 		- View : html, jsp
 		- Controller : servlet
 
 ## Spring 규칙
 - 기본 뼈대 (필요 *.class -> *.jar)
-  - library : *.jar(굉장히 많음) jar파일간의 의존관계가 존재한다.
+  - library : *.jar (굉장히 많음) jar 파일 간의 의존관계가 존재한다.
       - 의존 관계 library 자동 framework
-          - maven : xml 형식 -> pom.xml (Spring 프레임워크의 라이브러리 의존관계에 대한 자동 설정)
+        1. maven : xml 형식 -> pom.xml (Spring 프레임워크의 라이브러리 의존관계에 대한 자동 설정)
             
                 환경설정 (크게 3가지로 분류된다.)
                     1. xml (위치 : classpath기반) - /tag 규칙, 속성, 계층 tag
                         tag : body, empty body
                     2. Annotation - ex) @Controller @Service @Repository
                     3. property 파일 (자원파일) - *.properties
-          - gradle : a, b, ... 규칙
+        2. gradle : a, b, ... 규칙
 
 ## Spring 기본 어노테이션
-- @Component
+- **@Configuration**
+  - 스프링 설정 정보로 인식하고, 스프링 빈이 싱글톤을 유지하도록 추가 처리를 해준다.
+
+
+- **@Component**
   - framework에서 관리하는 객체(di 대상객체)
+  - 컴포넌트스캔에서 사용된다.
   - 선언위치 : 클래스 선언
 	
 
-- @Service
+- **@Service**
   - 서비스 기반 클래스
+  - 특별한 처리는 하지 않지만, 스프링 비즈니스 로직 계층으로 인식되는데 사용된다.
   - 선언위치 : 클래스 선언
 
 
-- @Repository
+- **@Repository**
   - DAO 기반 클래스
+  - 스프링 데이터 접근 계층으로 인식하고, 데이터 계층의 예외를 스프링 예외로 변환해준다.
   - 선언위치 : 클래스 선언
 	
 
-- @Autowired
+- **@Autowired**
   - 필요한 객체를 자동으로 주입 선언
   - 선언위치 : 멤버변수, 생성자, 메서드(setter(), 일반메서드() 가능)
   - xml 환경설정 
@@ -66,8 +73,8 @@
       - 여러개 있을 경우 Qualifiy (@Qualifier 어노테이션을 통해 ID를 명시한다.)
 		
 
-- @Controller
-  - Controller 클래스
+- **@Controller**
+  - 스프링 MVC 컨트롤러로 인식하고 사용된다.
 
 ### IoC
 - 제어의 역전 : 메소드나 객체의 호출작업을 개발자가 결정하는 것이 아니라, 외부에서 결정되는 것을 의미한다.
