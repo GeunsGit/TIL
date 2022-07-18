@@ -9,14 +9,16 @@
 	* 프로젝트 단위 위치: project\WEB-INF\lib> *.jar
 	
 - EL과 함께 사용한다.
-	* jsp 페이지에 지시어 태그 추가
-	<%@ taglib prefix="~~"
-		uri="~~" %>
+    * jsp 페이지에 지시어 태그 추가
+	`<%@ taglib prefix="~~"
+        uri="~~" %>`
 	
-	* <prefix:tag-name attribute="value" />
-	* <prefix:tag-name attribute="value" >
-		....
-	</prefix:tag-name>
+    * `<prefix:tag-name attribute="value" />`
+
+    * `<prefix:tag-name attribute="value" >
+        ....
+	</prefix:tag-name>`
+
 
 ### 대표적인 JSTL taglib	
 - core: c 변수 지원, 흐름제어, URL처리 http://java.sun.com/jsp/jstl/core
