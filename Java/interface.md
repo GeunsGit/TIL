@@ -1,30 +1,30 @@
 # 인터페이스 (Interface)
 
--------------
 ## 인터페이스란?
 
 * Class Node Type (클래스 종류) 중 하나
 * 동일한 목적 하에 동일한 기능을 수행하게끔 강제하는 것
 
--------------
+
 ### 설계 방법
 
 - 부모인터페이스 > 구현 자식클래스
-	- 통상적으로 작명은 다음과 같이 한다.
+    - 통상적으로 작명은 다음과 같이 한다.
+
 - 부모인터페이스
-	- public interface IF인터페이스이름 {}
-	- public interface I인터페이스이름  {}
-	- public interface 인터페이스이름   {}
+	- `public interface IF인터페이스이름 {}`
+	- `public interface I인터페이스이름  {}`
+	- `public interface 인터페이스이름   {}`
 
 - 자식구현클래스
-	- public class 클래스이름Impl implements 부모인터페이스이름 {}
-	- public class 클래스이름 implements IF부모인터페이스이름 {}
+	- `public class 클래스이름Impl implements 부모인터페이스이름 {}`
+	- `public class 클래스이름 implements IF부모인터페이스이름 {}`
 
--------------
+
 ### 특징
 
-- 직접 객체 생성 불가
-- 상수와 추상메서드로만 존재하는 클래스 형태
+- **직접 객체 생성 불가**
+- **상수와 추상메서드로만 존재하는 클래스 형태**
 - 상속(구현) : 필수
 - 상속(구현) : implements 부모인터페이스이름1, 부모인터페이스이름X
 - 인터페이스도 extends를 이용해 상속이 가능
@@ -38,7 +38,7 @@
 			* 모든 멤버변수는 public static final 이며 생략 가능
 			* 모든 메서드는 public abstract 이며 생략 가능
 
--------------
+
 ### 필요성	
 	
 - 인터페이스의 필요성
@@ -48,7 +48,7 @@
 	- 서로 상속의 관계가 없는 클래스들에게 인터페이스를 통한 관계 부여로 다형성 확장
 	- 모듈 간 독립적 프로그래밍 가능 -> 개발 기간 단축
 
--------------
+
 ### default method vs static method
 
 - default method
@@ -70,7 +70,8 @@
 	- interface에 선언된 static method
 		* 일반 static 메서드와 마찬가지로 별도의 객체가 필요 없음
 		* 구현체 클래스 없이 바로 인터페이스 이름으로 메서드에 접근해서 사용 가능
--------------
+
+
 ### default method가 생기게 된 배경?
 
 - 오픈소스 : interface 제공
@@ -84,13 +85,12 @@
 	4. default method는 서브클래스에서 재정의 가능
 
 
--------------
 ### 사용 방법
 
 - default method는 객체생성 참조변수명.default메서드명();
 - static method는 객체생성없이 인터페이스이름.static메서드명();
 
--------------
+
 ### 학습한 내용과 느낀 점
 
 - 기존에는 interface를 단순히 표준화하기 위한 도구라고만 생각했다. 하지만 더 공부해보니 강제 구현, 다형성 여러 부분을 적용시킬 수 있는 클래스 노드 타입이었다.
